@@ -16,19 +16,18 @@ const typeDefs = gql`
         email: String!
         password: String!
         savedBooks: [Book]
+        bookCount: Int
     }
-
-    inpute InputBook {
+    input SavedBook {
         bookId: String
-        authors: [String]
         title: String
         description: String
+        authors: [String]
         image: String
-        link:String
+        link: String
+      }
 
-    }
-
-    tyoe Auth {
+    type Auth {
         token: ID!
         user: User
     }
