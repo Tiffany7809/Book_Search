@@ -30,7 +30,7 @@
 
   <h2 id="install">Installation</h2>
 
-  To Install: Clone Git Repoaitory \ run `npm i` in the client, server and root folders \ run `npm run build` in the root directory \ run `npm run develop`
+  To Install: Clone Git Repoaitory / run `npm i` in the client, server and root folders / run `npm run build` in the root directory  / run `npm run develop`
   ***
 
 
@@ -42,6 +42,9 @@
   
 
   ***
+
+  GitHub Repository : https://github.com/Tiffany7809/Book_Search 
+  Deployed Application: https://book-search-graphql-refactor.herokuapp.com/
 
 
   <h2 id="license">License</h2>
