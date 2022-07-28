@@ -12,6 +12,8 @@ const server = new ApolloServer({
   resolvers,
 });
 
+// const publicPath =( __dirname, "..", "public" )
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

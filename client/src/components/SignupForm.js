@@ -4,7 +4,7 @@ import { useMutation } from "@apollo/react-hooks";
 
 // import { createUser } from '../utils/API';
 import Auth from "../utils/auth";
-import { CREATE_USER } from "../utils/mutations";
+import { ADD_USER } from "../utils/mutations";
 
 const SignupForm = () => {
   // set initial form state
@@ -18,7 +18,7 @@ const SignupForm = () => {
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
 
-  const [createUser] = useMutation(CREATE_USER);
+  const [addUser] = useMutation(ADD_USER);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -36,7 +36,7 @@ const SignupForm = () => {
     }
 
     try {
-      const { data } = await createUser({
+      const { data } = await addUser({
         variables: { ...userFormData },
       });
       Auth.login(data.addUser.token);
